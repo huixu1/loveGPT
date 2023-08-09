@@ -1,0 +1,52 @@
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+/* chat content scroll */
+.chat-content-container {
+  max-height: 567px;
+  overflow-y: auto; /* scrolling */
+}
+
+/* chat box */
+
+.sent.message {
+  background-color: #e6f7ff; /* Light blue background for sent messages */
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start; /* Align items at the start  */
+}
+
+.respond.message {
+  background-color: #f0f0f0; /* Light gray background for received messages */
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex; /* two-column layout */
+  align-items: flex-start;
+}
+
+/* The sender's name column */
+.message-sender {
+  flex: 0 0 auto;
+  padding-right: 8px; /* space between sender's name and message content */
+  font-weight: bold; /* sender's name bold  */
+}
+
+/* The message content column */
+.message-content {
+  flex: 1;
+  word-wrap: break-word; /* Enable word wrapping */
+  word-break: break-all; /* Break long words at any character if they exceed width */
+}

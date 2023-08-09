@@ -1,0 +1,55 @@
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+/* chat content section */
+.chat-content-container {
+  max-height: 567px;
+  overflow-y: auto; /* scrolling */
+}
+
+/* chat box */
+
+.sent.message {
+  background-color: #e6f7ff; /* Light blue for user input messages */
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.respond.message {
+  background-color: #f0f0f0; /* Light gray for respond messages */
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* two-column layout */
+
+/* 1. sender's name column */
+.message-sender {
+  flex: 0 0 auto;
+  padding-right: 8px;
+  font-weight: bold; /* sender's name bold  */
+}
+
+/* 2. message content column */
+.message-content {
+  flex: 1;
+  word-wrap: break-word; /* 自动换行 */
+  word-break: break-all; /* Break long words */
+}
